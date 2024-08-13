@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background-image: url();
+} 
+
+body{
+    background-image:url(oi.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+nav{
+    background: rgb(122, 163, 224);
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: rgb(122, 163, 224);
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    d
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 60px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: rgb(122, 163, 224);
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul{
+    border-top: none;
+}
+nav ul li:hover > ul{
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 250px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgb(0,0,0,0,.3);
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.contents {
+    position: absolute;
+    top: 60%;
+     left: 15%;
+}
+.contents h1 {
+    color: rgb(72, 132, 222);
+    font-size: 30px;
+    text-shadow:  -4px 4px 4px white;
+}
+.button {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 5px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(94, 124, 212);
+    
+
+}
+.btn:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+/*----- Course -----*/
+
+.course {
+    width: 80%;
+    margin-top:300px;
+    padding-top: 300px;
+    text-align: center;
+    margin-left: 80px;
+    padding-left: 80px;
+    
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+p {
+    color: #181212;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/* mengatur gaya untuk bagian utama (main) */
+main {
+    padding: 20px;
+}
+
+/* mengatur gaya untuk footer */
+footer {
+    background-color: rgb(122, 163, 224);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
